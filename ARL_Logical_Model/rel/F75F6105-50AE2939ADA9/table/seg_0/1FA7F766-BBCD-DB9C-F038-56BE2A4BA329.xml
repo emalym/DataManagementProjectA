@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1FA7F766-BBCD-DB9C-F038-56BE2A4BA329" name="Notif_List">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>1FC2B76B-1DCF-3900-FEBE-562DB85232E8</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="notification_list" id="481F2E06-AE2D-3D9F-B744-1D00D844E5BB">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>2ACC5244-5353-1178-EF2A-9AF8544B3E2A</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="F8AD53B1-5AC3-3299-3243-18E51E2FB10C">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>CEBED31E-FD67-E987-FED5-82B001DDF725</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="8E49B90C-AA5D-3F68-9695-1C52B5B1B52B">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>32936274-B085-82D6-F832-D899B795E839</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="07500CFA-E313-74BC-2577-8F66FE6F133C">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>79A0868F-2FEE-9EF0-0463-A1055ED500B4</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ownership_division_code" id="64C032E2-D540-80C9-2880-53CA358AA659">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>E4D79E5B-2DBC-9F0E-1E17-CB05B4D66BF3</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="external_view_name" id="2C9A4967-BFD2-AFAA-A0F6-4749AE20F989">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>912DF5E4-E7F1-41DC-FC1A-AE80D7BDF7F8</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="76D346E6-FC58-B3CB-0DE6-32091AC1DA13">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>35F8052E-81F2-7061-2C88-9F1606F68DEB</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Member_member_id" id="CC96895E-1E88-3B4E-CD02-62552051C458">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>97EEE2EB-3571-8701-C9DB-A23EE0EFEBCD</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>2A43BCEC-C874-4866-02C7-2B332804E901</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CFC0720-DA66-55E8-1C99-33E65174B499" referredColumn="2A43BCEC-C874-4866-02C7-2B332804E901"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1974D707-49A1-AAD2-D69C-9A56B2D8969B" name="Notif_List_PK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>CD1ACAC0-1126-94E1-CC90-330BC0422107</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="481F2E06-AE2D-3D9F-B744-1D00D844E5BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C28CF2A-73C6-44B2-F3B8-BC27A00C24ED" name="Notif_List__IDX">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E8DC5BCE-C527-0947-088D-D5496704E00A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CC96895E-1E88-3B4E-CD02-62552051C458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1300FE7E-91BC-D51D-14F5-08DCF0CE3707" name="Notif_List_Member_FK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>E8DC5BCE-C527-0947-088D-D5496704E00A</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC96895E-1E88-3B4E-CD02-62552051C458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

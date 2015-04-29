@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E8603FB-32D8-7543-8A69-EBCADA29E8D1" name="Provided_Emps">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:39:41 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="0041AF4E-96DF-89E4-E2E8-F69A14CEBBB2">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:39:54 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id" id="C891ED3C-E293-8D68-CDEB-CE11DFD7624A">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-16 18:36:28 UTC</createdTime>
+<generatorID>BB5CEF4F-44F0-D7C2-3379-9CD6B8A8ABE8</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8EAAD60A-D92F-BAE9-7188-11E4E7E3B0FC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="5CA660D7-9F2D-A77A-43E3-B67823573419">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-18 22:12:25 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute name="name" id="3C876D46-A353-7228-6147-E8CCB4E8E491">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:08:06 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="lab" id="2965ED36-78AC-021D-253A-DA05CF607B2E">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:08:06 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="division" id="B0300CB4-8A64-F9D9-FB01-4D3C8BB86BD5">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:08:06 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="status" id="43EB6986-6A3E-F8EE-C3E7-2F186ABAB007">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:08:06 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="status_eff_date" id="0F38CDAA-D52F-C2A8-66C0-EC2C90188840">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:08:06 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F6D5082-5902-5F99-7F03-FDA487BDF535" name="{entity} PK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-18 21:37:02 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<engineerTo>
+<item key="F75F6105-F0F6-3ADC-6B3D-50AE2939ADA9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0041AF4E-96DF-89E4-E2E8-F69A14CEBBB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

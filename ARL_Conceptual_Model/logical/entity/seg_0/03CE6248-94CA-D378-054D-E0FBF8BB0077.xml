@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="03CE6248-94CA-D378-054D-E0FBF8BB0077" name="NL_Member">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:26:39 UTC</createdTime>
+<ownerDesignName>Logical_Project_A(copy)</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_id" id="8EAAD60A-D92F-BAE9-7188-11E4E7E3B0FC">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:26:58 UTC</createdTime>
+<ownerDesignName>Logical_Project_A(copy)</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="CE18E64D-74CD-ECCE-31AD-3876D90B369A">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:27:26 UTC</createdTime>
+<ownerDesignName>Logical_Project_A(copy)</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="user_id" id="8ED50759-59EC-F7F8-060E-4921479814A1">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-18 21:37:38 UTC</createdTime>
+<generatorID>BB5CEF4F-44F0-D7C2-3379-9CD6B8A8ABE8</generatorID>
+<ownerDesignName>Logical_Project_A(copy)</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0041AF4E-96DF-89E4-E2E8-F69A14CEBBB2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="notification_list" id="029F6551-520E-01CC-C890-87E82A83F10F">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:44:38 UTC</createdTime>
+<generatorID>EE2B35AA-EFFE-147A-9540-A512FD481725</generatorID>
+<ownerDesignName>ARL_Conceptual_Model</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2ACC5244-5353-1178-EF2A-9AF8544B3E2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB5FF7D5-C45C-68CB-56B8-7E854412B967" name="{entity} PK">
+<createdBy>EmalyMartinez</createdBy>
+<createdTime>2015-04-13 22:27:15 UTC</createdTime>
+<ownerDesignName>Logical_Project_A(copy)</ownerDesignName>
+<engineerTo>
+<item key="61BE6555-63F9-0612-F306-6FD3C0397464" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8EAAD60A-D92F-BAE9-7188-11E4E7E3B0FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

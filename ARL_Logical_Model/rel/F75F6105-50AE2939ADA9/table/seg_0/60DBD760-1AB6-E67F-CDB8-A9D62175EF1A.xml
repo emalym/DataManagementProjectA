@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60DBD760-1AB6-E67F-CDB8-A9D62175EF1A" name="Member">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>03CE6248-94CA-D378-054D-E0FBF8BB0077</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_id" id="2A43BCEC-C874-4866-02C7-2B332804E901">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>8EAAD60A-D92F-BAE9-7188-11E4E7E3B0FC</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="704674B5-EFBA-E857-23B5-0A263B184DA7">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>CE18E64D-74CD-ECCE-31AD-3876D90B369A</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Provided_Emps_user_id" id="3FBE7C1B-4CEA-2212-EEDD-6141B0C87682">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>8ED50759-59EC-F7F8-060E-4921479814A1</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6F600191-DE45-82BB-F9AA-3F161FA8DBE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE7DD202-5AE4-F71E-A798-BD5A5C52ACF3" referredColumn="6F600191-DE45-82BB-F9AA-3F161FA8DBE7"/>
+</associations>
+</Column>
+<Column name="Notif_List_notification_list" id="BE9965FC-DF70-6151-2CB2-342EEB7B6799">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>2A15B722-4702-E75A-5821-25E3291C08C0</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>481F2E06-AE2D-3D9F-B744-1D00D844E5BB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D383360-F824-2C59-7A34-7A888C88CFD4" referredColumn="481F2E06-AE2D-3D9F-B744-1D00D844E5BB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88791957-E8D6-4F8B-CC03-2DEB74D43F7B" name="Member_PK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>EB5FF7D5-C45C-68CB-56B8-7E854412B967</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A43BCEC-C874-4866-02C7-2B332804E901"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B20AC66-FC46-A725-9DBD-72324C2D62C9" name="Member__IDX">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BB5CEF4F-44F0-D7C2-3379-9CD6B8A8ABE8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3FBE7C1B-4CEA-2212-EEDD-6141B0C87682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCD7FE00-3680-05C3-4A91-D792F9C2EBF8" name="Member__IDXv1">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E8DC5BCE-C527-0947-088D-D5496704E00A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="BE9965FC-DF70-6151-2CB2-342EEB7B6799"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C6A9269-0AA1-F739-BFC2-A4324AB04A0F" name="Member_Provided_Emps_FK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>BB5CEF4F-44F0-D7C2-3379-9CD6B8A8ABE8</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FBE7C1B-4CEA-2212-EEDD-6141B0C87682"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="408E67EA-775A-2C25-0754-257BDBD06269" name="Member_Notif_List_FK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>E8DC5BCE-C527-0947-088D-D5496704E00A</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE9965FC-DF70-6151-2CB2-342EEB7B6799"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

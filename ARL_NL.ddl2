@@ -1,0 +1,126 @@
+DROP SEQUENCE Admin_Priv_seq ; 
+create sequence Admin_Priv_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Admin_Priv_PK_trig 
+; 
+
+create or replace trigger Admin_Priv_PK_trig 
+before insert on Admin_Priv
+for each row 
+begin 
+select Admin_Priv_seq.nextval into :new.privilege_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Document_seq ; 
+create sequence Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Document_PK_trig 
+; 
+
+create or replace trigger Document_PK_trig 
+before insert on Document
+for each row 
+begin 
+select Document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Member_seq ; 
+create sequence Member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+
+DROP SEQUENCE MEMBERSHIP_seq ; 
+create sequence MEMBERSHIP_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER MEMBERSHIP_PK_trig 
+; 
+
+create or replace trigger MEMBERSHIP_PK_trig 
+before insert on MEMBERSHIP
+for each row 
+begin 
+select MEMBERSHIP_seq.nextval into :new.membership_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Notif_List_seq ; 
+create sequence Notif_List_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Notif_List_PK_trig 
+; 
+
+create or replace trigger Notif_List_PK_trig 
+before insert on Notif_List
+for each row 
+declare
+member_id NUMBER;
+begin
+select Member_seq.nextval into member_id from dual;
+select Notif_List_seq.nextval into :new.notification_list from dual;
+select member_id into :new.Member_member_id from dual;
+insert into Member values (member_id, NULL, NULL, :new.notification_list, NULL, NULL, NULL, NULL, NULL);
+end; 
+
+
+create or replace trigger Notif_list_PK_Del_Member_trig
+before delete on Notif_List
+for each row
+begin
+delete from Member m
+where m.member_id = :old.Member_member_id;
+end;
+/
+
+DROP SEQUENCE Provided_Emps_seq ; 
+create sequence Provided_Emps_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Provided_Emps_PK_trig 
+; 
+
+create or replace trigger Provided_Emps_PK_trig 
+before insert on Provided_Emps
+for each row 
+declare
+member_id NUMBER;
+begin 
+select Member_seq.nextval into member_id from dual; 
+select Provided_Emps_seq.nextval into :new.user_id from dual;
+insert into Member values (member_id, NULL, :new.user_id, NULL, NULL, NULL, NULL, NULL, NULL);
+end; 
+/
+
+create or replace trigger Provided_Emps_Del_Member_trig
+before delete on Provided_Emps
+for each row
+begin
+delete from Member m
+where m.member_id = :old.Member_member_id;
+end;
+/
+
+DROP INDEX Notif_List_notificatio_FK_0 ;
+CREATE INDEX Notif_List_notificatio_FK_0 ON Admin_Priv(Notif_List_notification_list) ;
+DROP INDEX Provided_Emps_user_id_FK_1 ;
+CREATE INDEX Provided_Emps_user_id_FK_1 ON Admin_Priv(Provided_Emps_user_id) ;
+DROP INDEX Member_member_id_FK_2 ;
+CREATE INDEX Member_member_id_FK_2 ON Document(Member_member_id) ;

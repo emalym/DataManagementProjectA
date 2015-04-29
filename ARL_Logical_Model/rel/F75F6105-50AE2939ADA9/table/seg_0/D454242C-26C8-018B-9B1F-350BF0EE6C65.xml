@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D454242C-26C8-018B-9B1F-350BF0EE6C65" name="Admin_Priv">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>5F5CA5B6-773B-6385-D27A-DDD998D8CC50</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="privilege_id" id="029AD45C-DF9B-7BF8-880D-2AB79F64FD99">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>CC02E47C-FB17-6EB1-5708-FA0FC491AEB3</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Provided_Emps_user_id" id="4CEC6321-4773-6B7B-7E1D-644580A82229">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>678112AA-60EC-1705-D0D9-FDCBE7784ADC</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6F600191-DE45-82BB-F9AA-3F161FA8DBE7</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ACE9646-7894-389D-8A4D-CE18A3096802" referredColumn="6F600191-DE45-82BB-F9AA-3F161FA8DBE7"/>
+</associations>
+</Column>
+<Column name="Notif_List_notification_list" id="E3A07F88-C195-54CB-E719-E917B4274FB4">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>683406DD-B917-8ED0-5214-2CD26AAEB306</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>481F2E06-AE2D-3D9F-B744-1D00D844E5BB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="497FAD89-029B-CAF9-CBCF-4ECE2F9D03F2" referredColumn="481F2E06-AE2D-3D9F-B744-1D00D844E5BB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28CDE776-E976-1426-AE5E-7202EE2DE916" name="Admin_Priv_PK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>2E8A6CDA-3550-FA95-F3DF-E177A185C4F9</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="029AD45C-DF9B-7BF8-880D-2AB79F64FD99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1734733A-5014-E343-C98D-0B11D00352AB" name="Admin_Priv_Provided_Emps_FK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>7F2FB0AC-01A7-BFDF-EFE4-7A72B72DF814</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CEC6321-4773-6B7B-7E1D-644580A82229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D16A31E9-B4BA-9670-EF72-E5778BE10CA2" name="Admin_Priv_Notif_List_FK">
+<createdBy>Angela</createdBy>
+<createdTime>2015-04-23 18:57:34 UTC</createdTime>
+<generatorID>D510998F-7833-B211-9FAF-3E6CCB8B0745</generatorID>
+<ownerDesignName>ARL_Logical_Model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3A07F88-C195-54CB-E719-E917B4274FB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

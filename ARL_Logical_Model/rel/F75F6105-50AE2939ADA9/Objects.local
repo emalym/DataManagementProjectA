@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="173E37B3-2799-4A86-6785-9437E166F841" name="Document" seqName="seg_0"/>
+   <object objectType="Table" objectID="1FA7F766-BBCD-DB9C-F038-56BE2A4BA329" name="Notif_List" seqName="seg_0"/>
+   <object objectType="Table" objectID="46922896-A79B-7BCB-7D61-C72F7C2C353F" name="Provided_Emps" seqName="seg_0"/>
+   <object objectType="Table" objectID="60DBD760-1AB6-E67F-CDB8-A9D62175EF1A" name="Member" seqName="seg_0"/>
+   <object objectType="Table" objectID="AC9F6B64-CCCE-527F-D844-B4D9122CF79A" name="Membership" seqName="seg_0"/>
+   <object objectType="Table" objectID="D454242C-26C8-018B-9B1F-350BF0EE6C65" name="Admin_Priv" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="047E6CB1-DA54-A21A-84E7-EB3AD42E95EE" name="Provided_Emps_Member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1D383360-F824-2C59-7A34-7A888C88CFD4" name="Member_Notif_List_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2F027E86-748A-3445-6E79-9C25F0F6BA2B" name="Document_Member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3CFC0720-DA66-55E8-1C99-33E65174B499" name="Notif_List_Member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="497FAD89-029B-CAF9-CBCF-4ECE2F9D03F2" name="Admin_Priv_Notif_List_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6ACE9646-7894-389D-8A4D-CE18A3096802" name="Admin_Priv_Provided_Emps_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A9AED4AB-69C7-7E8C-5715-D6FF05FA3414" name="Membership_Member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="AE7DD202-5AE4-F71E-A798-BD5A5C52ACF3" name="Member_Provided_Emps_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CC191820-D2E4-DEF9-8A27-4B113A70A3DA" name="Membership_Notif_List_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
